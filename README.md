@@ -1,81 +1,93 @@
 <div align="center">
-  <h1>Bike Rental Backend</h1>
+  <h1>Pet Care Tips & Stories</h1>
 </div>
 
 ---
 
 ## About The Project
 
-# Project Description
+### Project Description
 
-The Bike Rental Website is an innovative platform designed to simplify the bike rental process for users of all ages. Our goal is to create a user-friendly online marketplace where individuals can easily browse, book, and manage bike rentals.
+"Pet Care Tips & Stories" is an engaging platform that offers practical advice and heartwarming tales for pet owners. The application covers essential care aspects such as nutrition, exercise, grooming, and regular veterinary visits to ensure pets stay healthy and happy. It also features inspiring adoption and rescue stories that highlight the deep bond between pets and their owners.
 
 ## Key Features
 
--   **User Registration and Authentication**: Users can create accounts and log in securely to access personalized features and manage their bookings.
+-   **User Registration and Authentication**: Users can create accounts, log in securely, and manage their profiles.
+-   **User and Admin Dashboards**: Personalized dashboards displaying user-specific content, with admin capabilities to manage users and posts.
 
--   **Bike Inventory Management**: The platform allows administrators to add, update, and remove bike listings, ensuring that users have access to the latest available options.
+-   **Content Creation**: Users can create and share pet care tips and stories using a rich text editor, allowing for formatting and image attachments.
 
--   **Real-Time Availability**: Users can view the availability of bikes in real-time, making it easy to find and reserve the right bike for their needs.
+-   **Premium Content Access**: Users can subscribe to access exclusive features and premium posts through integrated payment options.
 
--   **Seamless Booking Process**: Our intuitive booking system guides users through selecting a bike, specifying rental dates, and completing their transactions effortlessly.
+-   **Real-Time Interaction**: Users can upvote, downvote, comment on posts, and follow other users to enhance community engagement.
 
--   **Payment Integration**: The site integrates with payment gateways like Stripe to facilitate secure online payments, ensuring a smooth transaction experience.
+-   **Advanced Search Functionality**: Users can easily search and filter tips or stories based on keywords or categories.
 
--   **User Profiles**: Users can manage their profiles, view booking history, and receive personalized recommendations based on their preferences.
-
--   **Admin Dashboard**: A comprehensive dashboard for administrators to manage users, track rentals, and analyze usage statistics.
+-   **Profile Management**: Users can update personal information, view their posts, and manage followers.
 
 ## Target Audience
 
-The Bike Rental Website is ideal for casual biker, tourists, and urban commuters looking for convenient and affordable bike rental options. Whether someone needs a bike for a day, a weekend, or longer, our platform aims to meet their needs with ease.
+This application is ideal for pet owners, animal lovers, and anyone interested in learning about pet care. It aims to provide both guidance on maintaining pet well-being and emotional moments through shared stories.
 
 ## Vision
 
-Our vision is to promote eco-friendly transportation options while making bike rentals accessible and hassle-free for everyone. By leveraging technology, we aim to enhance the biking experience and encourage more people to choose cycling as their preferred mode of transportation.
-
-Join us in making bike rentals more accessible and enjoyable for all!
+Our vision is to foster a community of pet lovers who share knowledge and experiences. We aim to enhance pet well-being while celebrating the bond between pets and their owners through engaging stories and advice.
 
 ## 🛠️ Technology Used
 
-This project is built using a MERN stack
+This project is built using a MERN stack:
+
+-   **Frontend Development:**
+
+    -   [Next.js](https://nextjs.org/)
+    -   [Redux](https://redux.js.org/)
+    -   [TypeScript](https://www.typescriptlang.org/)
 
 -   **Backend Development:**
-    -   [Node JS][Node-url]
-    -   [Express JS][Express-url]
-    -   [Mongoose ODM][Mongoose-url]
-    -   [TypeScript][Typescript-url]
-    -   [Zod][Zod-url]
+
+    -   [Node.js](https://nodejs.org/)
+    -   [Express.js](https://expressjs.com/)
+    -   [Mongoose](https://mongoosejs.com/)
     -   **JWT** for secure user authentication
-    -   **Aamarpay** for handling payments
+
+-   **Database:**
+
+    -   [MongoDB](https://www.mongodb.com/)
+
+-   **Payment Integration:**
+    -   Aamarpay or Stripe for handling payments
 
 ## Installation Guideline
-
-Instructions on how to install, configure, and get the project running locally.
 
 ### Prerequisites
 
 -   Node.js and npm (Node Package Manager) installed
 -   MongoDB instance (local or cloud-based)
--   Aamarpay account or demo credential for payment processing (optional, if testing payments)
+-   Aamarpay or Stripe account for payment processing (optional for testing)
 
-## **Getting Started**
+## Getting Started
 
-Please make sure to follow these instructions to run the project on your machine. To get a local copy up and running follow these simple example steps.
+To run the project locally, follow these steps:
 
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/SAIFUL20WD/Bike-Rental-Server.git
+    git clone https://github.com/SAIFUL20WD/Pet-Care-Server.git
     ```
 
 2. **Navigate to the Project Directory:**
 
     ```bash
-    cd Bike-Rental-Server
+    cd Pet-Care-Server
     ```
 
-3. Please create a `.env` file and provide NODE_ENV, PORT, DB_URL, BCRYPT_SALT_ROUNDS, JWT_SECRET_KEY, JWT_EXPIRES_IN CLIENT_URL, SERVER_URL, Payment Credentials variable
+3. **Create a `.env` File** and provide the following variables (see env.example file):
+
+    - `NODE_ENV`
+    - `PORT`
+    - `DB_URL`
+    - `JWT_SECRET_KEY`
+    - Payment Credentials (for Aamarpay or Stripe)
 
 4. **Install Dependencies:**
 
@@ -89,20 +101,17 @@ Please make sure to follow these instructions to run the project on your machine
     npm run start:dev
     ```
 
-    The server will be running at **`http://localhost:5000`**
+    The server will be running at **`http://localhost:5000`**.
 
 ## Usage
 
-_For more examples, please refer to the [Documentation](https://documenter.getpostman.com/view/29777357/2sAXqv61cp)_
+For API documentation and examples, please refer to the [Documentation](https://example.com).
 
-### Project Live Link: [Vercel](https://bike-rental-server.vercel.app)
+### Project Live Link: [Vercel](https://pet-care-server-two.vercel.app/)
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Contributions are welcome! If you have suggestions or improvements, please feel free to fork the repo and create a pull request. You can also open an issue with the tag "enhancement". Don’t forget to give the project a star!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -112,12 +121,4 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-Dev - SAIFUL. <a href="mailto:saiful2076af@gmail.com">Send email</a>
-
-[product-screenshot]: images/screenshot.png
-[Node.js]: https://nodejs.org/static/logos/nodejsDark.svg
-[Node-url]: https://nodejs.org/en/download/prebuilt-installer
-[Express-url]: https://expressjs.com/
-[Mongoose-url]: https://mongoosejs.com/
-[Typescript-url]: https://www.typescriptlang.org/
-[Zod-url]: https://zod.dev/
+Developer - SAIFUL. <a href="mailto:saiful2076af@gmail.com">Send email</a>
