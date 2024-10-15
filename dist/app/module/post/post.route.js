@@ -1,0 +1,22 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PostRoutes = void 0;
+const express_1 = __importDefault(require("express"));
+const auth_1 = __importDefault(require("../../middleware/auth"));
+const validateRequest_1 = __importDefault(require("../../middleware/validateRequest"));
+const post_validation_1 = require("./post.validation");
+const post_controller_1 = require("./post.controller");
+const router = express_1.default.Router();
+router.post("/", (0, auth_1.default)(false), (0, validateRequest_1.default)(post_validation_1.postValidations.createPostValidationSchema), post_controller_1.PostControllers.createPost);
+router.get("/", post_controller_1.PostControllers.getAllPost);
+router.get("/get-user-post", (0, auth_1.default)(false), post_controller_1.PostControllers.getPostsByUser);
+router.get("/:id", post_controller_1.PostControllers.getPostById);
+router.put("/:id", (0, auth_1.default)(false), (0, validateRequest_1.default)(post_validation_1.postValidations.updatePostValidationSchema), post_controller_1.PostControllers.updatePost);
+router.delete("/:id", /*auth(false),*/ post_controller_1.PostControllers.deletePost);
+router.patch("/:id/comment", post_controller_1.PostControllers.createComment);
+router.patch("/:id/vote", post_controller_1.PostControllers.vote);
+router.patch("/status/:id", post_controller_1.PostControllers.postStatusChange);
+exports.PostRoutes = router;
